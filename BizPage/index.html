@@ -296,7 +296,8 @@
       <div class="container text-center">
         <h3>Call To Action</h3>
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Upload Image</a>
+        <a class="cta-btn" id="buttonid">Upload Image</a>
+        <input id='fileid' type='file' hidden/>
       </div>
     </section><!-- #call-to-action -->
 
@@ -887,6 +888,12 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script>
+ document.getElementById('buttonid').addEventListener('click', openDialog); 
+ function openDialog() { 
+   document.getElementById('fileid').click();
+ }
+  </script>
 
 </body>
 </html>
